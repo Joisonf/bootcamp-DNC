@@ -1,0 +1,310 @@
+
+:root{
+  --azul-dnc: #0c70f2;
+  --preto-dnc: #303030;
+  --cinza-hover: #c9c9c9;
+
+  --font-padrao: "inter";
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: "inter";
+
+  background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
+  background-repeat: no-repeat;
+}
+
+#principal{
+  width: 100%;
+  height: 100px;
+  background: var(--preto-dnc);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #bababa;
+}
+
+#menu{
+  width: 55%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  
+}
+
+#principal div a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Inter;
+}
+
+  #principal div a:hover{
+    color: var(--cinza-hover);
+    border-bottom: 1px solid #ffffff;
+
+  }
+
+#principal button{
+ margin-right: 5%;
+ background-color: var(--azul-dnc);
+ border: 0px;
+ height: 40px;
+ width: 80px;
+ font-family: "inter";
+ font-size: 15px;
+ font-weight: 600;
+ color: #ffffff;
+ box-shadow: 3px 2px 4px rgba(12, 112, 242, 0,25);
+ cursor: pointer;
+}
+
+#principal button:hover{
+  background-color: blue ;
+  border-bottom: 1px solid #ffffff;
+}
+
+/*seçao principal*/
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+header{
+  color: #ffffff;
+}
+
+header h1{
+  font-size: 80px;
+  font-weight: 800;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+header h2{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+
+  margin-bottom: 100px;
+}
+
+header .inverter{
+  background-color: black;
+  font-weight: bold;
+  padding: 5px;
+}
+
+/*FORMULARIO*/
+
+form{
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  width: 600px;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+form input{
+  border-radius: 10px;
+  border: 0;
+  height: 30px;
+  font-size: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+form label{
+  margin: 10px 0px 10px 0px;
+}
+
+form input::placeholder{
+  color: rgba(57, 57, 57, 0.5);
+}
+
+.checkbox-itens label{
+  font-size: 25px;
+}
+
+.checkbox-itens{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input[type="checkbox"]{
+transform: scale(1.7);
+}
+
+input[type="submit"]{
+  background-color: rgba(12, 112, 242, 0.9);
+  width: 100%;
+  height: 56px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 50px;
+  box-shadow: 0px 6px 4px rgba(12, 112, 242, 0,25) ;
+  cursor: pointer;
+}
+
+/*footer*/
+
+footer{
+  width: 100%;
+  background-color: var(--azul-dnc);
+}
+
+footer .linha1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffffff;
+}
+
+footer ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+ 
+  font-size: 25px;
+}
+
+footer nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 330px;
+}
+
+footer h5{
+  text-align: center;
+  font-weight: 800;
+  font-size: 20px;
+
+  background: black;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 10px;
+}
+
+footer ul li{
+  text-align: center;
+  font-weight: 600;
+  font-size: 20pxpx;
+
+  margin: 20px 0px 20px 0px;
+}
+
+footer ul li a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer ul li a:hover{
+  color: var(--cinza-hover);
+}
+
+footer .endereço{
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  max-width: 28%;
+}
+
+footer .linha2{
+  display: flex;
+  justify-content: center ;
+  padding: 0px 5px;
+  margin-top: 50px;
+  padding-bottom: 10px;
+}
+
+footer .linha2 a{
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0px 5px;
+  
+}
+
+footer .linha2 a:first-child{
+  border-right: 3px solid white;
+}
+
+footer .linha2 a:hover{
+  color: var(--cinza-hover);
+}
+
+@media only screen and (max-width: 600px){
+  #pricipal{
+    flex-direction: column;
+   height: auto;
+  }
+
+  #menu{
+   flex-direction: column;
+   width: 100%;
+   align-items: initial;
+   padding-top: 30px;
+   margin-bottom: 20px;
+  }
+
+  #menu a{
+    height: 35px;
+  }
+
+  #principal button{
+    border-radius: 5px;
+  }
+
+  /*section*/
+  section{
+    margin-top: 20px;
+  }
+
+  section h1{
+    font-size: 38px;
+  }
+
+  section h2{
+    font-size: 28px;
+    padding: 0px 10px;
+  }
+
+  form{
+    width: 95%;
+    font-size: 20px;
+  }
+
+  .checkbox-itens label{
+    font-size: 17px;
+  }
+
+  /*footer*/
+  footer .linha1{
+    flex-direction: column;
+  }
+
+  footer .endereço{
+  max-width: 90%;
+  }
+}
